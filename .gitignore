@@ -5,3 +5,5 @@ doc/
 modbuild.xml
 modules.xml
 *.iml
+.gradle
+/bin/

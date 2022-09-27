@@ -75,6 +75,11 @@ tasks.named("build") {
 	dependsOn(jingTrang)
 }
 
+tasks.named("test") {
+	dependsOn(jingTrang)
+	dependsOn(":ant-test")
+}
+
 val antJar: TaskProvider<Task> = tasks.named("ant-jar")
 
 // https://stackoverflow.com/questions/27993814/only-run-task-if-another-isnt-up-to-date-in-gradle

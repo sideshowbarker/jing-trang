@@ -4,7 +4,7 @@
 
 <xsl:output indent="yes"
 	    encoding="utf-8"/>
-	    
+
 <xsl:variable name="build" select="'${build.dir}'"/>
 <xsl:variable name="doc" select="'${doc.dir}'"/>
 <xsl:template match="/">
@@ -336,13 +336,12 @@
       <xslt style="{$srctestdir}/{@transform}"
 	    in="{$srctest}"
 	    out="{$runtestdir}/{@name}test.xml">
-	<factory name="net.sf.saxon.TransformerFactoryImpl">
-    <classpath>
-      <fileset dir="lib">
-        <filename name="saxon9.jar"/>
-      </fileset>
-    </classpath>
-  </factory>
+	<factory name="net.sf.saxon.TransformerFactoryImpl" />
+  <classpath>
+    <fileset dir="lib">
+      <filename name="saxon9.jar"/>
+    </fileset>
+  </classpath>
       </xslt>
       <!-- XXX Could validate intermediate result against a schema -->
     </xsl:if>
