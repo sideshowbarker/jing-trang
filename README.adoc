@@ -3,11 +3,11 @@
 :artifactId: jing
 :repository: jing-trang
 
-image:https://travis-ci.org/relaxng/{repository}.svg?branch=master["Build Status", link="https://travis-ci.org/relaxng/{repository}"]
+image:https://img.shields.io/github/workflow/status/relaxng/{repository}/tests/master?style=plastic["Build Status", link="https://github.com/relaxng/jing-trang/actions/workflows/tests.yml?query=branch%3Amaster"]
 image:https://maven-badges.herokuapp.com/maven-central/{groupId}/{artifactId}/badge.svg["Artifact on Maven Central", link="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22{groupId}%22%20a%3A%22{artifactId}%22"]
 image:http://www.javadoc.io/badge/{groupId}/{artifactId}.svg["Javadocs", link="http://www.javadoc.io/doc/{groupId}/{artifactId}"]
 
-After cloning the repository, here's how to build.
+== Building
 
 . Ensure you have git and JDK 8 or above installed.
    All other dependencies are included in the repository.
@@ -26,11 +26,8 @@ After cloning the repository, here's how to build.
 . Change your working directory to be the `jing-trang` directory (that is,
    the directory containing this file).
 
-. Run the `ant` script included in the repository. On Linux, use the
-   command `./ant`. On Windows, use `.\ant`.
-   That runs the version of `ant` included in the repository. When the
-   `ant` script completes, you should find `jing.jar` and `trang.jar` files
+. Run `./gradlew` (Linux, macOS) or `.\gradle.bat` (Windows) at the root of the repository to build the project.
+   When the build completes, you should find `jing.jar` and `trang.jar` files
    in the `build` subdirectory.
-   You can also tell the `ant` script to build the `test` target, which
-   will build the jars and then run some tests. On Linux, use the command
-   `./ant test`. On Windows, use `.\ant test`.
+   You can also use `./gradlew test` or `.\gradle.bat test` to run the `test` target, which
+   will build the jars and then run some tests.
