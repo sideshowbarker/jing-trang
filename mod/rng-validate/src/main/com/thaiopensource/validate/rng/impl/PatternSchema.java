@@ -18,6 +18,15 @@ public class PatternSchema extends AbstractSchema {
     this.spb = spb;
     this.start = start;
   }
+ 
+  /**
+   * Returns the pattern start.
+   * 
+   * @return the pattern start.
+   */
+  public Pattern getStart() {
+    return start;
+  }
 
   public Validator createValidator(PropertyMap properties) {
     ErrorHandler eh = properties.get(ValidateProperty.ERROR_HANDLER);
