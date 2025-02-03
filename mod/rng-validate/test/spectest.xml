@@ -756,7 +756,7 @@
 <testCase>
 <section>3</section>
 <incorrect>
-<element name="&#xE35;" xmlns="http://relaxng.org/ns/structure/1.0">
+<element name="&#x37E;" xmlns="http://relaxng.org/ns/structure/1.0">
   <empty/>
 </element>
 </incorrect>
@@ -773,7 +773,7 @@
 <section>3</section>
 <incorrect>
 <element xmlns="http://relaxng.org/ns/structure/1.0">
-  <name>&#xE35;</name>
+  <name>&#x37E;</name>
   <empty/>
 </element>
 </incorrect>
@@ -782,7 +782,7 @@
 <section>3</section>
 <incorrect>
 <element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
-  <attribute name="&#xE35;"/>
+  <attribute name="&#x37E;"/>
   <empty/>
 </element>
 </incorrect>
@@ -792,9 +792,9 @@
 <incorrect>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0">
   <start>
-    <ref name="&#xE35;"/>
+    <ref name="&#x37E;"/>
   </start>
-  <define name="&#xE35;">
+  <define name="&#x37E;">
     <element name="foo">
       <empty/>
     </element>
@@ -871,7 +871,7 @@
 <incorrect>
 <element xmlns="http://relaxng.org/ns/structure/1.0"
          xmlns:x="http://www.example.com/x"
-         name="x:&#xE35;">
+         name="x:&#x37E;">
   <empty/>
 </element>
 </incorrect>

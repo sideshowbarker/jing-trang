@@ -13,9 +13,11 @@
 <valid>j</valid>
 <valid>&#x212E;</valid>
 <valid>:</valid>
-<invalid>&#x10000;</invalid>
-<invalid>&#x10400;</invalid>
-<invalid>&#x10428;</invalid>
+<!-- TODO: These are technically valid, but not supported yet
+<valid>&#x10000;</valid>
+<valid>&#x10400;</valid>
+<valid>&#x10428;</valid>
+-->
 </testCase>
 <testCase>
 <incorrect>a??</incorrect>
